@@ -23,23 +23,6 @@ body {
     flex-direction: column
 }
 
-#breadcrumbs {
-    color: #0454a1
-}
-
-#breadcrumbs a {
-    color: #0454a1
-}
-
-#breadcrumbs a:hover {
-    color: #6ca14c;
-    text-decoration: none
-}
-
-#breadcrumbs span.breadcrumb_last {
-    color: #6ca14c
-}
-
 .top-bar {
     background-color: #eaeaea;
     padding: 2px 0
@@ -565,4 +548,25 @@ body {
 
 .title--secondary-c {
     color: #6ca14c
+}
+
+#breadcrumbs {
+    color: #0454a1
+}
+
+#breadcrumbs a {
+    color: #0454a1
+}
+
+#breadcrumbs a:hover {
+    color: #6ca14c;
+    text-decoration: none
+}
+
+#breadcrumbs span.breadcrumb_last {
+    color: #6ca14c
+}
+
+.n2-ss-layer .n2-ow {
+    padding: 0 !important
 }

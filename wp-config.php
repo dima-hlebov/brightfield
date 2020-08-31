@@ -79,6 +79,8 @@ $table_prefix = 'wp_';
  */
 define( 'WP_DEBUG', true );
 define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG_DISPLAY', false );
+define('UPLOADS', "wp-content/uploads/media-content");
 
 /* That's all, stop editing! Happy publishing. */
 

@@ -9,13 +9,10 @@
 	}
 	add_action( 'wp_enqueue_scripts', 'additional_custom_styles' );
 
-	// add_filter( 'wpseo_breadcrumb_single_link' ,'wpseo_remove_breadcrumb_link', 10 ,2);
-	// function wpseo_remove_breadcrumb_link( $link_output , $link ) {
-	// 	$text_to_remove = [
-	// 		'Каталог'
-	// 	];
-	// 	if ( in_array( $link['text'], $text_to_remove, true ) ) {
-	// 		return ;
-	// 	}
-	// }
+	function mytheme_add_woocommerce_support() {
+		add_theme_support( 'woocommerce' );
+	}
+	add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+
+	add_filter('woocommerce_enqueue_styles', '__return_false');
 ?>

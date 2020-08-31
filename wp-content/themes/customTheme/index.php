@@ -65,8 +65,9 @@
 <?php 
 	function getCategoriesByID($catID){
 		$categories = get_categories(array(
-			hide_empty => 0,
-			'parent' => $catID
+			'taxonomy' => 'product_cat',
+			'parent' => $catID,
+			hide_empty => 0
 		));
 		return $categories;
 	}
