@@ -61,14 +61,3 @@
 </section>
 
 <?php get_footer(); ?>
-
-<?php 
-	function getCategoriesByID($catID){
-		$categories = get_categories(array(
-			'taxonomy' => 'product_cat',
-			'parent' => $catID,
-			hide_empty => 0
-		));
-		return $categories;
-	}
-?>
