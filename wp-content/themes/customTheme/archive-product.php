@@ -15,9 +15,9 @@
 				<div class="categories">
 				<?php foreach($children as $category) :
 					$image = getThumbnail($category); ?>
-					<a href="<?php get_category_link($category); ?>" class="product">
-						<img src="<?php $image ?>" alt="product">
-						<p><?php $category->name ?></p>
+					<a href="<?php echo get_category_link($category); ?>" class="product">
+						<img src="<?php echo $image; ?>" alt="product">
+						<p><?php echo $category->name; ?></p>
 					</a>
 				<?php endforeach; ?>
 				</div>
@@ -26,18 +26,18 @@
 					$image = getThumbnail($curr_category); ?>
 					<div class="products">
 						<div class="products-wrapper">
-							<div class="products__text"><?php echo $curr_category->description; ?></div><img class="products__img" src="<?php $image; ?>" alt="product">
+							<div class="products__text"><?php echo $curr_category->description; ?></div><img class="products__img" src="<?php echo $image; ?>" alt="product">
 						</div>
 						<div class="products__items">
 							<div class="products__header">
 								<ul>
 									<li>№</li>
-									<li>Название</li>
+									<li>Продукт</li>
 									<li>Характеристики</li>
 								</ul>
 							</div>
 					<?php while ( have_posts() ) : the_post(); ?>
-							<a href="<?php get_permalink(); ?>" class="product product__big"><?php get_the_excerpt(); ?></a>
+							<div class="product product--big"><a class="product-link" href="<?php echo get_permalink(); ?>" ><?php echo get_the_excerpt(); ?></a><a class="product-add" rel="nofollow" href="<?php echo '?add-to-cart='.get_the_ID(); ?>">+</a></div>
 					<?php endwhile; ?>
 						</div>
 					</div>

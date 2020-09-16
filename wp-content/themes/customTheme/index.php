@@ -1,20 +1,28 @@
 <?php get_header(); ?>
 
 <?php
-		echo do_shortcode('[smartslider3 slider="2"]');
+		echo do_shortcode('[metaslider id="1257"]'); 
 ?>
 
 <section class="about" id="about">
 	<div class="container">
 		<div class="row">
-			<div class="about-wrapper">
-				<h1 class="title">О Brightfield</h1>
-				<h2 class="about__subheader">Все для эндоскопии</h2>
-				<p class="about__text">Штаб-квартира компании Brightfield и ее конструкторский отдел находиться в Стокгольме, 
-					а ее конструкторский отдел находиться в городе Мальмо, Швеция. Основным направлением деятельности 
-					компании является разработка и продвижение систем и технологий для эндоскопии, малоинвазивной хирургии и 
-					сопутствующего медицинского оборудования.
-				</p>
+			<div class="col">
+				<div class="about-wrapper">
+					<?php 
+						$curr_lang = pll_current_language();
+						$post = '';
+						if($curr_lang == 'ru'){
+							$post = get_post(1255); 
+						}else{
+							$post = get_post(1450);
+						}
+						$title = $post->post_title;
+						$content = $post->post_content;
+					?>
+					<h1 class="title"><?php echo $title; ?></h1>
+					<?php echo $content; ?>
+				</div>
 			</div>
 		</div>
 	</div>
