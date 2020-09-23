@@ -114,5 +114,12 @@
 	</div>
 </section>
 
-
+<div class="pop-up">
+	<div class="pop-up__content">
+		<?php $post = get_post(1247)?>
+		<span class="pop-up__close">&times;</span>
+		<h2 class="title"><?php echo $post->post_title; ?></h2>
+		<p class="pop-up__text"><?php echo $post->post_content; ?></p>
+	</div>	
+</div>
 <?php get_footer(); ?>

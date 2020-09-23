@@ -1,0 +1,38 @@
+@import "base/mixins"
+@import "base/variables"
+*
+    font-family: 'Roboto', sans-serif
+    
+html
+    height: 100%
+    font-size: 100%
+    color: $dark-c
+    scroll-behavior: smooth;
+    @include for-size($m-device)
+        font-size: 95%
+body
+    height: 100%
+    display: flex
+    flex-direction: column
+img
+    object-fit: contain
+
+
+@import "layout/_top-bar"
+@import "layout/_header"
+@import "layout/_carousel"
+@import "layout/_about"
+@import "layout/_footer"
+@import "layout/_catalog"
+@import "layout/_cart"
+@import "layout/_checkout"
+@import "layout/_search"
+
+@import "components/_languages"
+@import "components/_search"
+@import "components/_categorie"
+@import "components/_product"
+@import "components/_title"
+@import "components/_breadcrumbs"
+@import "components/_pop-up"
+@import "components/_btn"

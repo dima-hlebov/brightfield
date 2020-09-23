@@ -1,0 +1,48 @@
+.footer
+	flex-shrink: 0
+	color: #ffffff
+	font-size: 0.750rem
+	margin-top: 40px
+	background-color: $primary-c
+	padding-top: 20px
+	padding-bottom: 20px
+	.company-name 
+		font-size: 0.825rem
+		text-transform: uppercase
+		span
+			color: $secondary-c
+	.contacts
+		display: flex
+		align-items: center
+		justify-content: space-between
+		width: 100%
+		&__number
+			display: flex
+			align-items: center
+			i 
+				width: 10px
+				margin-right: 10px
+		&__mail
+			display: flex
+			align-items: center
+			i
+				width: 10px
+				margin-right: 10px
+				
+		&__address
+			display: flex
+			align-items: center
+			i 
+				width: 10px
+				margin-right: 10px
+			.address-wrapper
+				display: flex
+				p
+					margin-bottom: 0
+
+	@include for-size($s-device)
+		.contacts
+			flex-direction: column
+
+	// @include for-size($xs-device)
+

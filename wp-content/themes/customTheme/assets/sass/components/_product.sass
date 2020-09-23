@@ -1,0 +1,98 @@
+.product
+    width: 200px
+    height: 200px
+    border-radius: 5px
+    margin-bottom: 20px
+    margin-right: 10px
+    margin-left: 10px
+    padding: 10px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5)
+    color: $dark-c
+    &--big
+        width: 100%
+        margin: 0
+        height: 80px
+        box-shadow: none !important
+        border-radius: 0
+        flex-direction: row
+        padding: 0
+        &:nth-child(2n+1)
+            background-color: $light-c
+        .product-link
+            color: $dark-c
+            padding: 10px 2px 10px 10px 
+            height: 100%
+            width: 100%
+            &:hover
+                text-decoration: none
+                color: $primary-c
+        ul
+            list-style: none
+            padding: 0
+            margin: 0
+            display: grid
+            justify-items: start
+            align-items: center
+            grid-row-gap: 5px
+            column-gap: 5px
+            border-radius: 0
+            box-shadow: none
+            grid-template-columns: 1fr 2fr 2fr
+            width: 100%
+            height: 100%
+        .product-add
+            display: flex
+            align-items: center
+            justify-content: center
+            min-width: 30px
+            height: 97%
+            text-align: center
+            background-color: $primary-c
+            color: #ffffff
+            &:hover, &:focus
+                color: #ffffff
+                background-color: #0455a156
+                text-decoration: none
+    &:hover
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5)
+        transition: 0.3s
+        text-decoration: none 
+    
+    img
+        height: 80%
+        width: 100%
+    p
+        margin-bottom: 0
+        text-align: center
+    @include for-size($l-device)
+        width: 180px
+        height: 180px
+        font-size: 0.9rem
+        &--big
+            width: 100%
+            height: 80px
+    @include for-size($m-device)
+        width: 160px
+        height: 160px
+        &--big
+            width: 100%
+            height: 80px
+    @include for-size($s-device)
+        &--big
+            height: 140px
+            ul
+                text-align: center
+                li:nth-child(1)
+                    grid-row: 1 / 3
+                li:nth-child(3)
+                    grid-column: 2 / 4
+                    justify-self: center
+                li:nth-child(2)
+                    grid-column: 2 / 4
+                    justify-self: center
+                    font-weight: 700
+ 

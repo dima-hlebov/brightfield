@@ -1,0 +1,52 @@
+2020-09-17T11:25:58+00:00 CRITICAL Uncaught Error: Call to undefined function pll_the_languages() in /var/www/brightfieldw/brightfield.kiev.ua/wp-content/themes/customTheme/header.php:17
+Stack trace:
+#0 /var/www/brightfieldw/brightfield.kiev.ua/wp-includes/template.php(730): require_once()
+#1 /var/www/brightfieldw/brightfield.kiev.ua/wp-includes/template.php(676): load_template('/var/www/bright...', true, Array)
+#2 /var/www/brightfieldw/brightfield.kiev.ua/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /var/www/brightfieldw/brightfield.kiev.ua/wp-content/themes/customTheme/woocommerce/archive-product.php(1): get_header()
+#4 /var/www/brightfieldw/brightfield.kiev.ua/wp-content/plugins/woocommerce/includes/wc-core-functions.php(344): include('/var/www/bright...')
+#5 /var/www/brightfieldw/brightfield.kiev.ua/wp-content/plugins/woocommerce/templates/taxonomy-product_cat.php(22): wc_get_template('archive-product...')
+#6 /var/www/brightfieldw/brightfield.kiev.ua/wp-includes/template-loader.php(106): include('/var/www/bright...')
+#7 /var/www/brightfieldw/brightfield.kiev.ua/wp-blog-header.php(19): require_once('/var/www/bright...')
+#8 /var/www/brightfieldw/brightfield.kiev.ua/index.php(17): require('/var/www/bright...')
+#9 {main}
+  thrown in /var/www/brightfieldw/brightfield.kiev.ua/wp-content/themes/customTheme/header.php on line 17
+
+2020-09-17T11:25:59+00:00 CRITICAL Uncaught Error: Call to undefined function pll_the_languages() in /var/www/brightfieldw/brightfield.kiev.ua/wp-content/themes/customTheme/header.php:17
+Stack trace:
+#0 /var/www/brightfieldw/brightfield.kiev.ua/wp-includes/template.php(730): require_once()
+#1 /var/www/brightfieldw/brightfield.kiev.ua/wp-includes/template.php(676): load_template('/var/www/bright...', true, Array)
+#2 /var/www/brightfieldw/brightfield.kiev.ua/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /var/www/brightfieldw/brightfield.kiev.ua/wp-content/themes/customTheme/index.php(1): get_header()
+#4 /var/www/brightfieldw/brightfield.kiev.ua/wp-includes/template-loader.php(106): include('/var/www/bright...')
+#5 /var/www/brightfieldw/brightfield.kiev.ua/wp-blog-header.php(19): require_once('/var/www/bright...')
+#6 /var/www/brightfieldw/brightfield.kiev.ua/index.php(17): require('/var/www/bright...')
+#7 {main}
+  thrown in /var/www/brightfieldw/brightfield.kiev.ua/wp-content/themes/customTheme/header.php on line 17
+
+2020-09-17T11:25:59+00:00 CRITICAL Uncaught Error: Call to undefined function pll_the_languages() in /var/www/brightfieldw/brightfield.kiev.ua/wp-content/themes/customTheme/header.php:17
+Stack trace:
+#0 /var/www/brightfieldw/brightfield.kiev.ua/wp-includes/template.php(730): require_once()
+#1 /var/www/brightfieldw/brightfield.kiev.ua/wp-includes/template.php(676): load_template('/var/www/bright...', true, Array)
+#2 /var/www/brightfieldw/brightfield.kiev.ua/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /var/www/brightfieldw/brightfield.kiev.ua/wp-content/themes/customTheme/index.php(1): get_header()
+#4 /var/www/brightfieldw/brightfield.kiev.ua/wp-includes/template-loader.php(106): include('/var/www/bright...')
+#5 /var/www/brightfieldw/brightfield.kiev.ua/wp-blog-header.php(19): require_once('/var/www/bright...')
+#6 /var/www/brightfieldw/brightfield.kiev.ua/index.php(17): require('/var/www/bright...')
+#7 {main}
+  thrown in /var/www/brightfieldw/brightfield.kiev.ua/wp-content/themes/customTheme/header.php on line 17
+
+2020-09-17T11:25:59+00:00 CRITICAL Uncaught Error: Call to undefined function pll_the_languages() in /var/www/brightfieldw/brightfield.kiev.ua/wp-content/themes/customTheme/header.php:17
+Stack trace:
+#0 /var/www/brightfieldw/brightfield.kiev.ua/wp-includes/template.php(730): require_once()
+#1 /var/www/brightfieldw/brightfield.kiev.ua/wp-includes/template.php(676): load_template('/var/www/bright...', true, Array)
+#2 /var/www/brightfieldw/brightfield.kiev.ua/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /var/www/brightfieldw/brightfield.kiev.ua/wp-content/themes/customTheme/index.php(1): get_header()
+#4 /var/www/brightfieldw/brightfield.kiev.ua/wp-includes/template-loader.php(106): include('/var/www/bright...')
+#5 /var/www/brightfieldw/brightfield.kiev.ua/wp-blog-header.php(19): require_once('/var/www/bright...')
+#6 /var/www/brightfieldw/brightfield.kiev.ua/index.php(17): require('/var/www/bright...')
+#7 {main}
+  thrown in /var/www/brightfieldw/brightfield.kiev.ua/wp-content/themes/customTheme/header.php on line 17
+
+2020-09-17T11:47:19+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE) in /var/www/brightfieldw/brightfield.kiev.ua/wp-content/themes/customTheme/woocommerce/archive-product.php on line 44
+

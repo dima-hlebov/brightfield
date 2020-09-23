@@ -1,0 +1,49 @@
+.cart
+    flex: 1 0 auto
+    .woocommerce-cart-form
+        .shop_table 
+            width: 100%
+            td,th
+                text-align: center
+                vertical-align: center
+            th
+                background-color: $light-c
+                padding: 5px
+                line-height: 1
+
+            .product-remove
+                width: 30px
+            .product-thumbnail
+                .size-woocommerce_thumbnail
+                    height: 150px
+                    width: 150px
+            .product-name
+                ul
+                    list-style: none
+                    padding: 0
+                    margin: 0
+                    li:nth-child(1)
+                        display: none
+            .product-quantity
+                width: auto
+                input
+                    width: 50px 
+            .screen-reader-text
+                display: none
+            .fa-times
+                color: #d80000
+    @include for-size($s-device)
+        .product-thumbnail
+            display: none
+    @include for-size($xs-device)
+        .product-sku
+                display: none
+        .product-name ul li:nth-child(1)
+            display: list-item !important
+
+//fly cart
+.woofc-item-info
+    ul
+        list-style: none
+        padding: 0
+        margin: 0 

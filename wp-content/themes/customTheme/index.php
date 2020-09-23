@@ -10,13 +10,13 @@
 			<div class="col">
 				<div class="about-wrapper">
 					<?php 
-						$curr_lang = pll_current_language();
-						$post = '';
-						if($curr_lang == 'ru'){
+						// $curr_lang = pll_current_language();
+						// $post = '';
+						// if($curr_lang == 'ru'){
 							$post = get_post(1255); 
-						}else{
-							$post = get_post(1450);
-						}
+						// }else{
+						// 	$post = get_post(1450);
+						// }
 						$title = $post->post_title;
 						$content = $post->post_content;
 					?>

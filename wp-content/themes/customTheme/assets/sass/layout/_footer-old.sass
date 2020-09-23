@@ -1,0 +1,82 @@
+.footer
+	flex-shrink: 0
+	color: #ffffff
+	font-size: 0.750rem
+	margin-top: 40px
+	background-color: $primary-c
+	padding-top: 20px
+	padding-bottom: 20px
+	#contacts
+		padding-right: 0
+	.company-name 
+		font-size: 0.825rem
+		text-transform: uppercase
+		span
+			color: $secondary-c
+	.contacts
+		&__number
+			margin-top: 5px
+			display: flex
+			align-items: center
+			i 
+				width: 10px
+				margin-right: 10px
+		&__mail
+			margin-top: 5px
+			i
+				width: 10px
+				margin-right: 10px
+				
+		&__address
+			margin-top: 5px
+			display: flex
+			align-items: center
+			i 
+				width: 10px
+				margin-right: 10px
+			.address-wrapper p
+				margin-bottom: 0
+	.message-descr
+		display: block
+		text-align: center
+		margin: auto 0
+	.message
+		display: flex
+		flex-direction: column
+		align-items: center
+		label
+			margin-bottom: 0
+		input, textarea, button
+			margin-top: 5px
+			border: none
+		input, textarea, button
+			border-radius: 5px
+		input 
+			width: 170px
+		textarea
+			width: 300px
+		button
+			width: 170px
+			height: 
+			background-color: $secondary-c
+			color: #ffffff
+			line-height: 20px
+			&:hover
+				background-color: #77b353
+			&:focus
+				background-color: #77b353
+	@include for-size($s-device)
+		margin-top: 20px
+		.contacts
+			display: flex
+			justify-content: space-between
+			align-items: center
+			i 
+				align-self: center
+		.message-descr
+			margin-top: 10px
+	@include for-size($xs-device)
+		.contacts
+			flex-direction: column
+			.address-wrapper
+				display: flex

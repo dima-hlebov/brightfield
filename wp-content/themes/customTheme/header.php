@@ -13,9 +13,9 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <ul class="languages">
+                    <!-- <ul class="languages">
                         <?php pll_the_languages(array('show_flags'=>1,'show_names'=>0)); ?>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="col">
                     <?php echo do_shortcode('[wcas-search-form]'); ?>
@@ -31,16 +31,16 @@
                 </div>
                 <div class="col">
                     <nav class="menu">
-                        <?php $curr_lang = pll_current_language();
-						if($curr_lang == 'ru') : ?>
+                        <!-- <?php $curr_lang = pll_current_language();
+						if($curr_lang == 'ru') : ?> -->
 							<a href="/#about">О компании</a>
                             <a href="/#categories">Каталог</a>
                             <a href="/#footer">Контакты</a> 
-                        <?php else : ?>
+                        <!-- <?php else : ?> -->
 							<a href="/#about">О компанії</a>
                             <a href="/#categories">Каталог</a>
                             <a href="/#footer">Контакти</a>
-                        <?php endif; ?>
+                        <!-- <?php endif; ?> -->
                         <a class="cart-contents"><i class="fas fa-shopping-cart"></i><?php echo sprintf ( WC()->cart->get_cart_contents_count() ); ?></a>
                         <button class="burger" id="burger-open">
                         </button>

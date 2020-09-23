@@ -1,0 +1,34 @@
+.woocommerce .checkout
+    margin: 10px
+    display: flex
+    flex-direction: column
+    align-items: center
+    .col2-set
+        width: 460px
+    .input-text 
+        border: none
+        border-bottom: 2px solid $secondary-c
+        width: 430px
+    .button.alt
+        width: 430px
+        height: 40px
+        border: solid 2px $secondary-c
+        background-color: transparent
+        transition: 0.5s
+        &:hover
+            background-color: $secondary-c
+            color: #ffffff
+    textarea.input-text
+        resize: none
+        height: 200px
+    label
+        color: $secondary-c
+    h3, abbr, span.optional
+        display: none
+    @include for-size($s-device)
+        .col2-set
+            width: 310px
+        .input-text 
+            width: 280px
+        .button.alt
+            width: 280px

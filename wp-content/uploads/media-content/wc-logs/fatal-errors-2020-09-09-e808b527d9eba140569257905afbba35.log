@@ -1,0 +1,8 @@
+2020-09-09T13:02:12+00:00 CRITICAL syntax error, unexpected 'assets' (T_STRING), expecting ',' or ')' in /var/www/brightfieldw/brightfield.kiev.ua/wp-content/themes/customTheme/functions.php on line 15
+
+2020-09-09T13:02:13+00:00 CRITICAL syntax error, unexpected 'assets' (T_STRING), expecting ',' or ')' in /var/www/brightfieldw/brightfield.kiev.ua/wp-content/themes/customTheme/functions.php on line 15
+
+2020-09-09T13:03:22+00:00 CRITICAL syntax error, unexpected '''' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ')' in /var/www/brightfieldw/brightfield.kiev.ua/wp-content/themes/customTheme/functions.php on line 15
+
+2020-09-09T13:03:24+00:00 CRITICAL syntax error, unexpected '''' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ')' in /var/www/brightfieldw/brightfield.kiev.ua/wp-content/themes/customTheme/functions.php on line 15
+

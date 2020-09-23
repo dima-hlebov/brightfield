@@ -1,0 +1,8 @@
+2020-09-07T14:45:24+00:00 CRITICAL syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ')' in /var/www/brightfieldw/brightfield.kiev.ua/wp-content/themes/customTheme/single-product.php on line 10
+
+2020-09-07T14:45:34+00:00 CRITICAL syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ')' in /var/www/brightfieldw/brightfield.kiev.ua/wp-content/themes/customTheme/single-product.php on line 10
+
+2020-09-07T14:47:40+00:00 CRITICAL syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ')' in /var/www/brightfieldw/brightfield.kiev.ua/wp-content/themes/customTheme/single-product.php on line 10
+
+2020-09-07T14:47:44+00:00 CRITICAL syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ')' in /var/www/brightfieldw/brightfield.kiev.ua/wp-content/themes/customTheme/single-product.php on line 10
+

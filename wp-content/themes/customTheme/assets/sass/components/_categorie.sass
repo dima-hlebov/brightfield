@@ -1,0 +1,58 @@
+.categorie
+    margin-top: 20px
+    width: 100%
+    height: 250px
+    cursor: pointer
+    position: relative
+    perspective: 1000px
+    color: #ffffff
+    text-transform: uppercase
+    &__front, &__back
+        position: absolute
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        transition: 1s
+        backface-visibility: hidden
+    &__front
+        padding: 20px
+        background-color: $primary-c 
+    &__back
+        padding: 15px
+        transform: rotateY(180deg)
+        background-color: $secondary-c
+        ul
+            height: 100%
+            list-style: none
+            padding: 0
+            margin: 0
+            text-align: center
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            align-items: center
+            li
+                &:nth-child(1)
+                    margin-top: 0
+                a
+                    font-size: 0.875rem
+                    color: #ffffff
+                    &:hover
+                        color: $primary-c
+                        text-decoration: none
+                        
+
+
+    &:hover &__front, &:active &__front 
+        transform: rotateY(180deg)
+    &:hover &__back , &:active &__back 
+        transform: rotateY(360deg)
+    
+    @include for-size($m-device)
+        height: 200px
+    @include for-size($s-device)
+        margin: 10px auto 0 auto
+        width: 70%
+    @include for-size($xs-device)
+        height: 150px
